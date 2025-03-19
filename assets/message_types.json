@@ -1,0 +1,425 @@
+{
+  "std_msgs/String": {
+    "fields": {
+      "data": "string"
+    }
+  },
+  "std_msgs/Bool": {
+    "fields": {
+      "data": "boolean"
+    }
+  },
+  "std_msgs/Int32": {
+    "fields": {
+      "data": "int"
+    }
+  },
+  "std_msgs/Float64": {
+    "fields": {
+      "data": "double"
+    }
+  },
+  "geometry_msgs/Point": {
+    "fields": {
+      "x": "double",
+      "y": "double",
+      "z": "double"
+    }
+  },
+  "geometry_msgs/Quaternion": {
+    "fields": {
+      "x": "double",
+      "y": "double",
+      "z": "double",
+      "w": "double"
+    }
+  },
+  "geometry_msgs/Pose": {
+    "fields": {
+      "position": {
+        "x": "double",
+        "y": "double",
+        "z": "double"
+      },
+      "orientation": {
+        "x": "double",
+        "y": "double",
+        "z": "double",
+        "w": "double"
+      }
+    }
+  },
+  "geometry_msgs/Twist": {
+    "fields": {
+      "linear": {
+        "x": "double",
+        "y": "double",
+        "z": "double"
+      },
+      "angular": {
+        "x": "double",
+        "y": "double",
+        "z": "double"
+      }
+    }
+  },
+  "sensor_msgs/LaserScan": {
+    "fields": {
+      "angle_min": "double",
+      "angle_max": "double",
+      "angle_increment": "double",
+      "time_increment": "double",
+      "scan_time": "double",
+      "range_min": "double",
+      "range_max": "double",
+      "ranges": "array<double>",
+      "intensities": "array<double>"
+    }
+  },
+  "sensor_msgs/Imu": {
+    "fields": {
+      "orientation": {
+        "x": "double",
+        "y": "double",
+        "z": "double",
+        "w": "double"
+      },
+      "angular_velocity": {
+        "x": "double",
+        "y": "double",
+        "z": "double"
+      },
+      "linear_acceleration": {
+        "x": "double",
+        "y": "double",
+        "z": "double"
+      }
+    }
+  },
+  "nav_msgs/Odometry": {
+    "fields": {
+      "pose": {
+        "position": {
+          "x": "double",
+          "y": "double",
+          "z": "double"
+        },
+        "orientation": {
+          "x": "double",
+          "y": "double",
+          "z": "double",
+          "w": "double"
+        }
+      },
+      "twist": {
+        "linear": {
+          "x": "double",
+          "y": "double",
+          "z": "double"
+        },
+        "angular": {
+          "x": "double",
+          "y": "double",
+          "z": "double"
+        }
+      }
+    }
+  },
+  "nav_msgs/Path": {
+    "fields": {
+      "poses": "array<geometry_msgs/PoseStamped>"
+    }
+  },
+  "actionlib_msgs/GoalStatus": {
+    "fields": {
+      "goal_id": {
+        "stamp": {
+          "secs": "int",
+          "nsecs": "int"
+        },
+        "id": "string"
+      },
+      "status": "int",
+      "text": "string"
+    }
+  },
+  "std_msgs/Header": {
+    "fields": {
+      "seq": "uint",
+      "stamp": {
+        "secs": "int",
+        "nsecs": "int"
+      },
+      "frame_id": "string"
+    }
+  },
+  "std_msgs/Empty": {
+    "fields": {}
+  },
+  "geometry_msgs/Vector3": {
+    "fields": {
+      "x": "double",
+      "y": "double",
+      "z": "double"
+    }
+  },
+  "geometry_msgs/PoseStamped": {
+    "fields": {
+      "header": "std_msgs/Header",
+      "pose": "geometry_msgs/Pose"
+    }
+  },
+  "geometry_msgs/Transform": {
+    "fields": {
+      "translation": "geometry_msgs/Vector3",
+      "rotation": "geometry_msgs/Quaternion"
+    }
+  },
+  "geometry_msgs/TransformStamped": {
+    "fields": {
+      "header": "std_msgs/Header",
+      "child_frame_id": "string",
+      "transform": "geometry_msgs/Transform"
+    }
+  },
+  "sensor_msgs/Image": {
+    "fields": {
+      "header": "std_msgs/Header",
+      "height": "uint",
+      "width": "uint",
+      "encoding": "string",
+      "is_bigendian": "uint",
+      "step": "uint",
+      "data": "array<uint8>"
+    }
+  },
+  "sensor_msgs/PointCloud2": {
+    "fields": {
+      "header": "std_msgs/Header",
+      "height": "uint",
+      "width": "uint",
+      "fields": "array<sensor_msgs/PointField>",
+      "is_bigendian": "uint",
+      "point_step": "uint",
+      "row_step": "uint",
+      "data": "array<uint8>",
+      "is_dense": "bool"
+    }
+  },
+  "sensor_msgs/PointField": {
+    "fields": {
+      "name": "string",
+      "offset": "uint",
+      "datatype": "uint",
+      "count": "uint"
+    }
+  },
+  "sensor_msgs/Range": {
+    "fields": {
+      "header": "std_msgs/Header",
+      "radiation_type": "uint",
+      "field_of_view": "double",
+      "min_range": "double",
+      "max_range": "double",
+      "range": "double"
+    }
+  },
+  "sensor_msgs/Temperature": {
+    "fields": {
+      "header": "std_msgs/Header",
+      "temperature": "double",
+      "variance": "double"
+    }
+  },
+  "sensor_msgs/RelativeHumidity": {
+    "fields": {
+      "header": "std_msgs/Header",
+      "relative_humidity": "double",
+      "variance": "double"
+    }
+  },
+  "nav_msgs/GridCells": {
+    "fields": {
+      "header": "std_msgs/Header",
+      "cell_width": "double",
+      "cell_height": "double",
+      "cells": "array<geometry_msgs/Point>"
+    }
+  },
+  "nav_msgs/MapMetaData": {
+    "fields": {
+      "map_load_time": {
+        "secs": "int",
+        "nsecs": "int"
+      },
+      "resolution": "double",
+      "width": "uint",
+      "height": "uint",
+      "origin": "geometry_msgs/Pose"
+    }
+  },
+  "nav_msgs/OccupancyGrid": {
+    "fields": {
+      "header": "std_msgs/Header",
+      "info": "nav_msgs/MapMetaData",
+      "data": "array<int8>"
+    }
+  },
+  "diagnostic_msgs/DiagnosticArray": {
+    "fields": {
+      "header": "std_msgs/Header",
+      "status": "array<diagnostic_msgs/DiagnosticStatus>"
+    }
+  },
+  "diagnostic_msgs/DiagnosticStatus": {
+    "fields": {
+      "level": "uint8",
+      "name": "string",
+      "message": "string",
+      "hardware_id": "string",
+      "values": "array<diagnostic_msgs/KeyValue>"
+    }
+  },
+  "diagnostic_msgs/KeyValue": {
+    "fields": {
+      "key": "string",
+      "value": "string"
+    }
+  },
+  "std_msgs/Byte": {
+    "fields": {
+      "data": "uint8"
+    }
+  },
+  "std_msgs/UInt32": {
+    "fields": {
+      "data": "uint"
+    }
+  },
+  "std_msgs/Int16": {
+    "fields": {
+      "data": "int16"
+    }
+  },
+  "geometry_msgs/Inertia": {
+    "fields": {
+      "m": "double",
+      "com": "geometry_msgs/Vector3",
+      "ixx": "double",
+      "ixy": "double",
+      "ixz": "double",
+      "iyy": "double",
+      "iyz": "double",
+      "izz": "double"
+    }
+  },
+  "geometry_msgs/Wrench": {
+    "fields": {
+      "force": "geometry_msgs/Vector3",
+      "torque": "geometry_msgs/Vector3"
+    }
+  },
+  "sensor_msgs/CompressedImage": {
+    "fields": {
+      "header": "std_msgs/Header",
+      "format": "string",
+      "data": "array<uint8>"
+    }
+  },
+  "sensor_msgs/JointState": {
+    "fields": {
+      "header": "std_msgs/Header",
+      "name": "array<string>",
+      "position": "array<double>",
+      "velocity": "array<double>",
+      "effort": "array<double>"
+    }
+  },
+  "sensor_msgs/MagneticField": {
+    "fields": {
+      "header": "std_msgs/Header",
+      "magnetic_field": "geometry_msgs/Vector3",
+      "magnetic_field_covariance": "array<double>"
+    }
+  },
+  "nav_msgs/GetPlan": {
+    "fields": {
+      "start": "geometry_msgs/PoseStamped",
+      "goal": "geometry_msgs/PoseStamped",
+      "tolerance": "double"
+    }
+  },
+  "nav_msgs/SetMap": {
+    "fields": {
+      "map": "nav_msgs/OccupancyGrid",
+      "initial_pose": "geometry_msgs/PoseWithCovarianceStamped"
+    }
+  },
+  "control_msgs/JointControllerState": {
+    "fields": {
+      "header": "std_msgs/Header",
+      "set_point": "double",
+      "process_value": "double",
+      "process_value_dot": "double",
+      "error": "double",
+      "time_step": "double",
+      "command": "double",
+      "pid": {
+        "p": "double",
+        "i": "double",
+        "d": "double"
+      }
+    }
+  },
+  "trajectory_msgs/JointTrajectory": {
+    "fields": {
+      "header": "std_msgs/Header",
+      "joint_names": "array<string>",
+      "points": "array<trajectory_msgs/JointTrajectoryPoint>"
+    }
+  },
+  "trajectory_msgs/JointTrajectoryPoint": {
+    "fields": {
+      "positions": "array<double>",
+      "velocities": "array<double>",
+      "accelerations": "array<double>",
+      "effort": "array<double>",
+      "time_from_start": {
+        "secs": "int",
+        "nsecs": "int"
+      }
+    }
+  },
+  "visualization_msgs/Marker": {
+    "fields": {
+      "header": "std_msgs/Header",
+      "ns": "string",
+      "id": "int32",
+      "type": "int32",
+      "action": "int32",
+      "pose": "geometry_msgs/Pose",
+      "scale": "geometry_msgs/Vector3",
+      "color": {
+        "r": "float32",
+        "g": "float32",
+        "b": "float32",
+        "a": "float32"
+      },
+      "lifetime": {
+        "secs": "int",
+        "nsecs": "int"
+      },
+      "frame_locked": "boolean",
+      "points": "array<geometry_msgs/Point>",
+      "colors": "array<std_msgs/ColorRGBA>",
+      "text": "string",
+      "mesh_resource": "string",
+      "mesh_use_embedded_materials": "boolean"
+    }
+  },
+  "visualization_msgs/MarkerArray": {
+    "fields": {
+      "markers": "array<visualization_msgs/Marker>"
+    }
+  }
+}
